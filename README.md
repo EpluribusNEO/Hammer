@@ -22,13 +22,11 @@ example:
 
 > python hammer.py -s 123.45.67.89 -t 135
 
-# hammer
-<img src="https://github.com/TermuxHackz/Hammer/blob/master/1607798352443.png" width="200px" height="200px"/>
 
 # Installation
 ```pkg update && pkg upgrade
 
-git clone https://github.com/TermuxHackz/Hammer
+git clone https://github.com/EpluribusNEO/Hammer.git
 
 cd Hammer
 
@@ -37,6 +35,8 @@ python hammer.py
 # Usage:
 > python hammer.py -s [IP address] -t 135
 
-example: python hammer.py -s 127.0.0.1 -t 135
+#### example: 
+* python hammer.py -s 127.0.0.1 -p 80 -t 135
+* python hammer.py -s github.com -p 443 -t 135
 
 =============================
